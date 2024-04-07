@@ -3,7 +3,7 @@ import React, { useState,useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAdminPassword } from '@/hooks/useAdminPassword';
 
-const Page = () => {
+const page = () => {
     const { password, passwordStored, storePassword } = useAdminPassword();
 
     useEffect(() => {
@@ -132,4 +132,4 @@ const Page = () => {
     </>
     );
   };
-export default Page
+export default page
