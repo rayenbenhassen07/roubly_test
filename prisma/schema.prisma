@@ -9,8 +9,8 @@ generator client {
 
 model Post {
   id          String    @id @default(auto()) @map("_id") @db.ObjectId
-  date        DateTime
-  time        DateTime
+  date        String  
+  time        String
   firstName   String
   lastName    String
   email       String
