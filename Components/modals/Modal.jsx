@@ -3,11 +3,13 @@ import React, { useState } from 'react';
 import { IoCloseSharp } from "react-icons/io5";
 import useModelCalender from '@/hooks/useModelCalender';
 
-
+import {components} from "@/lang";
+import useLanguage from "@/hooks/useLanguage";
 
 
 const Modal = () => {
   
+  const language = useLanguage();
   const modelC = useModelCalender();
   const [IsSubmitting, setIsSubmitting] = useState(false)
   const [toast, setToast] = useState("");
@@ -91,7 +93,7 @@ const Modal = () => {
       <div className={`fixed w-full h-screen flex justify-center items-center ${modelC.isOpen ? 'bg-neutral-800/70' : 'hidden'}`}>
         <div className={`w-[90%] h-[70%]  p-5 lg:w-1/3 bg-white border-black xl rounded-xl outline-none focus:outline-none translate duration-300 overflow-y-auto ${modelC.isOpen ? 'translate-y-0' : 'translate-y-full'} ${modelC.isOpen ? 'opacity-100' : 'opacity-0'}`}>
           <div className='flex w-full justify-between'>
-            <div className='text-lg font-bold'>free consultation !</div>
+            <div className='text-lg font-bold'>{components.model?.[language.valeur].Consultations}</div>
             <div>
               <div className="cursor-pointer text-blue-500">
                 <IoCloseSharp size={30} onClick={() => { modelC.onClose() }} />
@@ -104,37 +106,37 @@ const Modal = () => {
               {/* Add the inputs here */}
               <div className='flex flex-col gap-2 w-full'>
                 <div className='flex flex-col  justify-start items-start '>
-                  <label htmlFor="" className='font-bold'>Date <span className="text-blue-500">*</span> </label>
+                  <label htmlFor="" className='font-bold'>{components.model?.[language.valeur].f1} <span className="text-blue-500">*</span> </label>
                   <input type="date" name="date" value={formData.date} onChange={handleChange} className="p-2 mb-2 border w-full bg-blue-100 rounded-lg"  required  />
                 </div>
 
                 <div className='flex flex-col  justify-start items-start '>
-                  <label htmlFor="" className='font-bold'>Time <span className="text-blue-500">*</span> </label>
+                  <label htmlFor="" className='font-bold'>{components.model?.[language.valeur].f2} <span className="text-blue-500">*</span> </label>
                   <input type="time" name="time" value={formData.time} onChange={handleChange} className="p-2 mb-2 border w-full bg-blue-100 rounded-lg" required  />
                 </div>
 
                 <div className='flex flex-col  justify-start items-start '>
-                  <label htmlFor="" className='font-bold'>First Name <span className="text-blue-500">*</span> </label>
+                  <label htmlFor="" className='font-bold'>{components.model?.[language.valeur].f3} <span className="text-blue-500">*</span> </label>
                   <input type="text" name="firstName" value={formData.firstName} onChange={handleChange}  className="p-2 mb-2 border w-full bg-blue-100 rounded-lg" />
                 </div>
 
                 <div className='flex flex-col  justify-start items-start '>
-                  <label htmlFor="" className='font-bold'>Last Name <span className="text-blue-500">*</span> </label>
+                  <label htmlFor="" className='font-bold'>{components.model?.[language.valeur].f4} <span className="text-blue-500">*</span> </label>
                   <input type="text" name="lastName" value={formData.lastName} onChange={handleChange}  className="p-2 mb-2 border  w-full bg-blue-100 rounded-lg" required />
                 </div>
 
                 <div className='flex flex-col  justify-start items-start '>
-                  <label htmlFor="" className='font-bold'>Email <span className="text-blue-500">*</span> </label>
+                  <label htmlFor="" className='font-bold'>{components.model?.[language.valeur].f5} <span className="text-blue-500">*</span> </label>
                   <input type="email" name="email" value={formData.email} onChange={handleChange}  className="p-2 mb-2 border w-full bg-blue-100 rounded-lg" />
                 </div>
 
                 <div className='flex flex-col  justify-start items-start '>
-                  <label htmlFor="" className='font-bold'>Phone Number <span className="text-blue-500">*</span> </label>
+                  <label htmlFor="" className='font-bold'>{components.model?.[language.valeur].f6} <span className="text-blue-500">*</span> </label>
                   <input type="tel" name="phoneNumber" value={formData.phoneNumber} onChange={handleChange}  className="p-2 mb-2 border w-full bg-blue-100 rounded-lg" />
                 </div>
 
                 <div className='flex flex-col  justify-start items-start '>
-                  <label htmlFor="" className='font-bold'>Country <span className="text-blue-500">*</span> </label>
+                  <label htmlFor="" className='font-bold'>{components.model?.[language.valeur].f7} <span className="text-blue-500">*</span> </label>
                   <input type="text" name="country" value={formData.country} onChange={handleChange}  className="p-2 mb-2 border w-full bg-blue-100 rounded-lg" />
                 </div>
 

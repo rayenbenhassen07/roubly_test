@@ -11,7 +11,7 @@ const Services = () => {
   const modelC = useModelCalender();
   const language = useLanguage();
   return (
-    <div className=' text-center text-black bg-white py-20 mx-2' id='Services'>
+    <div className=' text-center text-white bg-white py-20 px-2 bg-primary' id='Services'>
       
       <h2 className='space-x-5 tracking-widest text-sm lg:text-lg font-semibold text-blue-500'>{components.Services?.[language.valeur].Title1}</h2>
      
@@ -22,7 +22,7 @@ const Services = () => {
         <h2>{components.Services?.[language.valeur].Title4}</h2>
       </div>
       
-      <div className='flex flex-col lg:flex-row justify-center items-center gap-10 lg:mx-20 mx-2 my-10'>
+      <div className='flex flex-col lg:flex-row justify-center items-center gap-10 lg:mx-20 mx-2 my-10 text-black'>
 
         <div className='flex flex-col items-start gap-5  px-4  pt-10 pb-20 rounded-xl shadow-lg bg-blue-100'>
             <div className='flex gap-2 justify-center '>

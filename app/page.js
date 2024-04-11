@@ -8,6 +8,7 @@ import Statistic from "@/Components/Statistic";
 import Services from "@/Components/Services";
 import Client from "@/Components/Client";
 import Footer from "@/Components/Footer";
+import Example from "@/Components/Example";
 
 
 
@@ -26,6 +27,7 @@ export default function Home() {
       <Skills/>
       <Statistic/>
       <Services/>
+      
       <Client/>
       <Footer/>
     </ClientOnly>

@@ -29,8 +29,8 @@ const HomeOne = () => {
     <div className='max-w-[1220px] pt-10 lg:pt-0 px-2 ml-auto mr-auto'>
       <div className='lg:pt-20 h-[100vh] w-full '>
         <div className='flex flex-col justify-center items-center pt-10 gap-10'>
-          <h2 className=' text-sm lg:text-lg text-neutral-600'>{components.HomeOne?.[language.valeur].Title1}</h2>
-          <h1 className='font-extrabold text-2xl md:text-4xl lg:text-5xl text-center gradient-text'>{components.HomeOne?.[language.valeur].Title2}</h1>
+          <h2 className=' text-sm lg:text-lg text-black'>{components.HomeOne?.[language.valeur].Title1}</h2>
+          <h1 className='font-extrabold  text-xl md:text-4xl lg:text-4xl text-center gradient-text'>{components.HomeOne?.[language.valeur].Title2}</h1>
           <div className='text-center text-md p-8 lg:px-20 lg:font-semibold '> {components.HomeOne?.[language.valeur].p1}</div>
           <button className='bg-orange-500 hover:bg-orange-400 p-3 lg:p-5 rounded-3xl text-white font-bold lg:text-xl shadow-lg cursor-pointer' onClick={()=>{modelC.onOpen()}}>{components.HomeOne?.[language.valeur].Consultations}</button>
 

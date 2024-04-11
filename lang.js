@@ -3,10 +3,10 @@
 export const components = {
     'Navbar': {
         en: {
-            Home: "Home",
-            Skills: "Skills",
-            Statistics: "Statistics",
-            Services: "Services",
+            Home: "HOME",
+            Skills: "SKILLS",
+            Statistics: "STATISTICS",
+            Services: "SERVICES",
             Consultations: "FREE CONSULTATIONS"
         },
         fr: {
@@ -28,14 +28,14 @@ export const components = {
     'HomeOne': {
         en: {
             Title1: "#1 Web Development Agency!",
-            Title2: "We're dedicated to delivering top-notch web solutions that exceed your expectations.",
+            Title2: "WE'RE DEDICATED TO DELIVERING TOP-NOTCH WEB SOLUTIONS THAT EXCEED YOUR EXPECTATIONS.",
             p1: "Our team of skilled developers and designers are experts in building custom websites tailored to your unique needs. Whether you're a small business or a large corporation, we have the experience and the tools to bring your vision to life.",
             Consultations: "FREE CONSULTATIONS",
             Weuse: "WE use"
         },
         fr: {
             Title1: "#1 Agence de Développement Web!",
-            Title2: "Nous sommes dédiés à fournir des solutions web de qualité supérieure qui dépassent vos attentes.",
+            Title2: "NOUS SOMMES DÉDIÉS À FOURNIR DES SOLUTIONS WEB DE QUALITÉ SUPÉRIEURE QUI DÉPASSENT VOS ATTENTES.",
             p1: "Notre équipe de développeurs et de designers qualifiés sont des experts dans la construction de sites web sur mesure adaptés à vos besoins uniques. Que vous soyez une petite entreprise ou une grande entreprise, nous avons l'expérience et les outils pour donner vie à votre vision.",
             Consultations: "CONSULTATIONS GRATUITES",
             Weuse: "NOUS utilisons"
@@ -52,7 +52,7 @@ export const components = {
     'Skills': {
         en: {
             Title1: "HOW WE OPERATE",
-            Title2: "Why choose Roubly Group?",
+            Title2: "WHY CHOOSE ROUBLY GROUP ?",
     
             Expertise : "Expertise and Experience",
             ExpertiseP : "Benefit from years of industry experience and a skilled team.",
@@ -74,7 +74,7 @@ export const components = {
         },
         fr: {
             Title1: "COMMENT NOUS TRAVAILLONS",
-            Title2: "Pourquoi choisir le Groupe Roubly ?",
+            Title2: "POURQUOI CHOISIR LE GROUPE ROUBLY ?",
     
             Expertise : "Expertise et Expérience",
             ExpertiseP : "Bénéficiez de nombreuses années d'expérience dans l'industrie et d'une équipe qualifiée.",
@@ -121,7 +121,7 @@ export const components = {
     'Statistic': {
         en: {
             Title1: "RESULTS SPEAK FOR THEMSELVES",
-            Title2: "Numbers that make sense",
+            Title2: "NUMBERS THAT MAKE SENSE",
             p1: "We've had the privilege of working with a diverse range of clients across various industries, launching over 11 websites that not only meet but exceed expectations.",
             p2: "Our commitment to client satisfaction is unwavering. With a 90% client satisfaction rate, we're proud to have built strong, long-lasting relationships with our clients based on trust and mutual success.",
             p3: "Time is of the essence, and we understand the importance of delivering results promptly. With an average project completion time of just 6 weeks, we ensure efficient turnaround without compromising on quality.",
@@ -131,7 +131,7 @@ export const components = {
         },
         fr: {
             Title1: "LES RÉSULTATS PARLENT D'EUX-MÊMES",
-            Title2: "Des chiffres qui ont du sens",
+            Title2: "DES CHIFFRES QUI ONT DU SENS",
             p1: "Nous avons eu le privilège de travailler avec une gamme diversifiée de clients dans diverses industries, lançant plus de 11 sites Web qui non seulement répondent mais dépassent les attentes.",
             p2: "Notre engagement envers la satisfaction du client est inébranlable. Avec un taux de satisfaction client de 90%, nous sommes fiers d'avoir établi des relations solides et durables avec nos clients basées sur la confiance et le succès mutuel.",
             p3: "Le temps est essentiel, et nous comprenons l'importance de livrer des résultats rapidement. Avec un délai moyen de réalisation de projet de seulement 6 semaines, nous assurons un retour efficace sans compromis sur la qualité.",
@@ -154,7 +154,7 @@ export const components = {
     'Services': {
         en: {
             Title1: "ROUBLY GROUP",
-            Title2: "What we do.",
+            Title2: "WHAT WE DO.",
             Title3: "At Roubly Group, we offer comprehensive web development solutions tailored to meet your unique needs and goals.",
             Title4: "Here's how we work:",
             Service1: "Consultation and Discovery",
@@ -170,7 +170,7 @@ export const components = {
         },
         fr: {
             Title1: "ROUBLY GROUP",
-            Title2: "Ce que nous faisons.",
+            Title2: "CE QUE NOUS FAISONS.",
             Title3: "Au sein du Groupe Roubly, nous proposons des solutions de développement web complètes adaptées à vos besoins et objectifs uniques.",
             Title4: "Voici comment nous travaillons :",
             Service1: "Consultation et Découverte",
@@ -214,6 +214,41 @@ export const components = {
         ar: {
             Title1: "من كل زاوية من العالم",
             Title2: "انضم إلى عملاء من جميع أنحاء العالم."
+        }
+    },
+    'model': {
+        en: {
+            Consultations: "FREE CONSULTATIONS",
+            f1: "Date",
+            f2: "Time",
+            f3: "First Name",
+            f4: "Last Name",
+            f5: "Email",
+            f6: "Phone Number",
+            f7: "Country",
+            send: "Send",
+        },
+        fr: {
+            Consultations: "CONSULTATIONS GRATUITES",
+            f1: "Date",
+            f2: "Heure",
+            f3: "Prénom",
+            f4: "Nom de famille",
+            f5: "E-mail",
+            f6: "Numéro de téléphone",
+            f7: "Pays",
+            send: "Envoyer",
+        },
+        ar: {
+            Consultations: "استشارات مجانية",
+            f1: "التاريخ",
+            f2: "الوقت",
+            f3: "الاسم الأول",
+            f4: "اسم العائلة",
+            f5: "البريد الإلكتروني",
+            f6: "رقم الهاتف",
+            f7: "الدولة",
+            send: "إرسال",
         }
     }
 

@@ -101,6 +101,7 @@ const Navbar = () => {
                                   duration-500
                                   
                                   
+                                  
                                   ${toggle ? 'top-0'  : '-top-72' }
                                   
                                   lg:pt-5
@@ -175,7 +176,7 @@ const Navbar = () => {
                       <option value='fr'>Frensh</option>
                       <option value='ar'>Arabic</option>
                   </select>
-                  <button className=" btn hidden lg:block p-3 from-slate-900 rounded-3xl text-sm bg-green-500 text-white font-bold hover:bg-green-400 transition"  onClick={()=>{modelC.onOpen()}}>{components.Navbar?.[language.valeur].Consultations}</button>
+                  <button className=" btn  hidden lg:block p-3 from-slate-900 rounded-3xl text-sm bg-green-500 text-white font-extrabold hover:bg-green-400 transition"  onClick={()=>{modelC.onOpen()}}>{components.Navbar?.[language.valeur].Consultations}</button>
                 </div>
     
                 <div className="lg:hidden text-black" onClick={() => setToggle(!toggle)}>
