@@ -5,18 +5,23 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: "Alexandria", sans-serif;
+    
     font-optical-sizing: auto;
     scroll-behavior: smooth;
     
     
 }
 
-
+.home{
+    background-image: url('../public/feature-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 nav.sticky{
     transition: 0.4s;
     width: 100%;
+    height: 70px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 
 }
@@ -40,9 +45,8 @@ h2{
 }*/
 
 .gradient-text {
-    background: -webkit-linear-gradient( #0331ff,#173de9,#7414ce,#8400ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    color: rgb(7, 7, 7);
 }
 
 
@@ -63,6 +67,8 @@ h2{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+
 
 @media (max-width:1000px) { 
     .info{

@@ -10,10 +10,13 @@ import Client from "@/Components/Client";
 import Footer from "@/Components/Footer";
 
 
+
+
 export default function Home() {
 
   
-
+  
+  
   return (
    <>
     <ClientOnly>

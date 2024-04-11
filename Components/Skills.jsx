@@ -1,13 +1,20 @@
+'use client';
 import React from 'react'
 import Image from 'next/image'
 
+import {components} from "@/lang";
+import useLanguage from "@/hooks/useLanguage";
+
 const Skills = () => {
+
+    const language = useLanguage();
+
   return (
     <div id='Skills' className='bg-white'>
         
         <div className='info flex flex-col gap-5 text-center py-10 px-2 lg:px-20  mt-48 sm:mt-10   bg-neutral-800 w-full text-white '>
-            <h2 className='space-x-5 tracking-widest text-sm lg:text-lg font-semibold text-blue-500'>HOW WE OPERATE</h2>
-            <h1 className='space-x-5 tracking-widest text-lg lg:text-3xl font-extrabold'>Why choose Roubly Group?</h1>
+            <h2 className='space-x-5 tracking-widest text-sm lg:text-lg font-semibold text-blue-500'>{components.Skills?.[language.valeur].Title1}</h2>
+            <h1 className='space-x-5 tracking-widest text-lg lg:text-3xl font-extrabold'>{components.Skills?.[language.valeur].Title2}</h1>
            <div className='grid grid-cols-2 lg:grid-cols-3  gap-10 lg:gap-5 mt-10'>
 
                 {/* row :1*/}
@@ -21,8 +28,8 @@ const Skills = () => {
                             alt="Picture of the author"
                         />
                     </div>
-                    <div className='text-sm lg:text-xl font-extrabold'>Expertise and Experience</div>
-                    <div className='w-full text-xs lg:text-sm lg:w-[90%] '>Benefit from <span className='font-bold'>years of industry experience</span> and a skilled team.</div>
+                    <div className='text-sm lg:text-xl font-extrabold'>{components.Skills?.[language.valeur].Expertise}</div>
+                    <div className='w-full text-xs lg:text-sm lg:w-[90%] '>{components.Skills?.[language.valeur].ExpertiseP}</div>
                 </div>
                 
                 {/* row :2*/}
@@ -36,8 +43,8 @@ const Skills = () => {
                             alt="Picture of the author"
                         />
                     </div>
-                    <div className='text-sm lg:text-xl font-extrabold'>Tailored Solutions</div>
-                    <div className='w-full text-xs lg:text-sm lg:w-[90%]'>Personalized approach to meet unique project requirements.</div>
+                    <div className='text-sm lg:text-xl font-extrabold'>{components.Skills?.[language.valeur].Tailored}</div>
+                    <div className='w-full text-xs lg:text-sm lg:w-[90%]'>{components.Skills?.[language.valeur].TailoredP}</div>
                 </div>
 
                 {/* row :3*/}
@@ -51,8 +58,8 @@ const Skills = () => {
                             alt="Picture of the author"
                         />
                     </div>
-                    <div className='text-sm lg:text-xl font-extrabold'>Quality Assurance</div>
-                    <div className='w-full text-xs lg:text-sm lg:w-[90%]'>Rigorous processes ensure high standards in <span className='font-bold'>performance</span> and <span className='font-bold'>security</span>.</div>
+                    <div className='text-sm lg:text-xl font-extrabold'>{components.Skills?.[language.valeur].Quality}</div>
+                    <div className='w-full text-xs lg:text-sm lg:w-[90%]'>{components.Skills?.[language.valeur].QualityP}</div>
                 </div>
 
                 {/* row :4*/}
@@ -66,8 +73,8 @@ const Skills = () => {
                             alt="Picture of the author"
                         />
                     </div>
-                    <div className='text-sm lg:text-xl font-extrabold'>Collaborative Approach</div>
-                    <div className='w-full text-xs lg:text-sm lg:w-[90%]'>Work closely with <span className='font-bold'>clients</span> throughout the project.</div>
+                    <div className='text-sm lg:text-xl font-extrabold'>{components.Skills?.[language.valeur].Collaborative}</div>
+                    <div className='w-full text-xs lg:text-sm lg:w-[90%]'>{components.Skills?.[language.valeur].CollaborativeP}</div>
                 </div>
 
                 {/* row :5*/}
@@ -81,8 +88,8 @@ const Skills = () => {
                             alt="Picture of the author"
                         />
                     </div>
-                    <div className='text-sm lg:text-xl font-extrabold'>Timely Delivery</div>
-                    <div className='w-full text-xs lg:text-sm lg:w-[90%]'>Efficient <span className='font-bold'>processes</span> for on-time project completion.</div>
+                    <div className='text-sm lg:text-xl font-extrabold'>{components.Skills?.[language.valeur].Timely}</div>
+                    <div className='w-full text-xs lg:text-sm lg:w-[90%]'>{components.Skills?.[language.valeur].TimelyP}</div>
                 </div>
 
                 {/* row :6*/}
@@ -96,8 +103,8 @@ const Skills = () => {
                             alt="Picture of the author"
                         />
                     </div>
-                    <div className='text-sm lg:text-xl font-extrabold'>Continuous Support</div>
-                    <div className='w-full text-xs lg:text-sm lg:w-[90%]'>Ongoing <span className='font-bold'>maintenance</span> and <span className='font-bold'>support</span> services post-launch.</div>
+                    <div className='text-sm lg:text-xl font-extrabold'>{components.Skills?.[language.valeur].Continuous}</div>
+                    <div className='w-full text-xs lg:text-sm lg:w-[90%]'>{components.Skills?.[language.valeur].ContinuousP}</div>
                 </div>
 
                 
