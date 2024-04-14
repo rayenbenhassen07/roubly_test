@@ -149,7 +149,7 @@ const Modal = () => {
               {toast}
             </div>
             <div className="flex justify-center mt-4">
-              <button type='submit' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-10 rounded">{IsSubmitting ? "wait..." : "Send"}</button>
+              <button type='submit' className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-10 rounded">{IsSubmitting ? <span className="loading loading-spinner loading-xs"></span> : "Send"}</button>
             </div>
           </form>
 

@@ -39,6 +39,8 @@ const Navbar = () => {
       }
     },[islanguage]);
     //
+
+
    
     
     
@@ -46,8 +48,10 @@ const Navbar = () => {
     window.addEventListener("scroll",function(){
       var nav = document.querySelector('nav');
       nav.classList.toggle("sticky" , this.window.scrollY > 0);
-    
     })
+
+    
+
     
 
     return (
@@ -165,18 +169,39 @@ const Navbar = () => {
                 </div>
                 
                 <div className="flex gap-2 justify-start items-center">
-                  <select
-                      className='py-2  text-black text-xs lg:text-base font-semibold border-2 border-gray-300 rounded-md px-2 focus:outline-none focus:border-blue-500'
-                      defaultValue={islanguage}
-                      onChange={(e) => {
-                        setLanguage(e.target.value);
-                      }}
-                  >
-                      <option value='en'>English</option>
-                      <option value='fr'>Frensh</option>
-                      <option value='ar'>Arabic</option>
-                  </select>
-                  <button className=" btn  hidden lg:block p-3 from-slate-900 rounded-3xl text-sm bg-green-500 text-white font-extrabold hover:bg-green-400 transition"  onClick={()=>{modelC.onOpen()}}>{components.Navbar?.[language.valeur].Consultations}</button>
+                  <details className="dropdown dropdown-hover">
+                    <summary className="m-1 btn relative flex justify-center gap-2" role="button">
+                      
+                      <div className="bg-rose-500">
+                        {islanguage === 'en' && (
+                          <Image src="/flags/america.jpg" width={20} height={20} className="w-7" />
+                        )}
+                        {islanguage === 'fr' && (
+                          <Image src="/flags/france.jpg" width={20} height={20} className="w-7" />
+                        )}
+                        {islanguage === 'ar' && (
+                          <Image src="/flags/arabe.png" width={20} height={20} className="w-7" />
+                        )}
+                      </div>
+                      <div>{islanguage}</div>
+                    </summary>
+                    <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-52">
+                      <li onClick={()=>{setLanguage('en')}}> 
+                        <a><Image src="/flags/america.jpg" width={200} height={200} className="w-8" /> 
+                        English (EN)</a>
+                      </li>
+                      <li onClick={()=>{setLanguage('fr')}}>
+                        <a><Image src="/flags/france.jpg" width={200} height={200} className="w-8" /> 
+                        Arabic (AR) </a>
+                      </li>
+                      <li onClick={()=>{setLanguage('ar')}}>
+                        <a><Image src="/flags/arabe.png" width={200} height={200} className="w-8" /> 
+                          Francais (FR)</a>
+                      </li>
+                    </ul>
+                  </details>
+                  
+                  <button className=" btn  hidden lg:block p-3 from-slate-900  text-sm bg-blue-500 text-white font-extrabold hover:bg-blue-400 transition"  onClick={()=>{modelC.onOpen()}}>{components.Navbar?.[language.valeur].Consultations}</button>
                 </div>
     
                 <div className="lg:hidden text-black" onClick={() => setToggle(!toggle)}>

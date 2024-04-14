@@ -1,0 +1,1 @@
+loading ; <span className="loading loading-spinner loading-xs"></span>

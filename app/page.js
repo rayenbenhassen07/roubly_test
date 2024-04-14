@@ -26,8 +26,8 @@ export default function Home() {
       <HomeOne/>
       <Skills/>
       <Statistic/>
+      <Example/>
       <Services/>
-      
       <Client/>
       <Footer/>
     </ClientOnly>
