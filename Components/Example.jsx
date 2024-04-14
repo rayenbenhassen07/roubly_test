@@ -1,8 +1,9 @@
 'use client'
 import React from 'react'
 import Image from "next/image";
+import Link from 'next/link';
 
-import { FaReact } from "react-icons/fa";
+import { FaReact  } from "react-icons/fa";
 import { FaPhp } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { FaHtml5 } from "react-icons/fa";
@@ -10,7 +11,10 @@ import { FaCss3Alt } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 
+
+
 const Example = () => {
+  
   return (
     <>
       <div className='w-full flex justify-center items-center gap-2 py-10 bg-second '>
@@ -20,7 +24,8 @@ const Example = () => {
           <div className=" px-4 py-16 bg-base-200">
 
             <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4'>
-              <a href="">
+
+              <Link href="/examples/web1">
                 <div className='flex flex-col  rounded-lg  hover:bg-blue-100 transition border-2 border-neutral-300'>
                   <Image src="/Projects/rayenPotfolio/web1.png" width={1000} height={1000} className="w-[100%] rounded-3xl p-2"/>
                   <div className=''>
@@ -36,9 +41,9 @@ const Example = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
 
-              <a href="">
+              <Link href="/examples/web2">
                 <div className='flex flex-col rounded-lg  hover:bg-blue-100 transition border-2 border-neutral-300'>
                 <Image src="/Projects/hbibna/web2.png" width={1000} height={1000} className="w-[100%] rounded-3xl p-2"/>
                   <div className=''>
@@ -69,9 +74,9 @@ const Example = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
 
-              <a href="">
+              <Link href="/examples/web3">
                 <div className='flex flex-col rounded-lg  hover:bg-blue-100 transition border-2 border-neutral-300'>
                   <Image src="/Projects/arij/web3.png" width={1000} height={1000} className="w-[100%] rounded-3xl p-2"/>
                   <div className=''>
@@ -94,9 +99,12 @@ const Example = () => {
                     </div>
                   </div>
                 </div>
-              </a>
+              </Link>
+
             </div>
+
             <div className='flex justify-center pt-10  '><a href=""> <div className='font-semibold text-lg hover:text-blue-500 transition cursor-pointer'>More details ....</div> </a></div>
+          
           </div>
           
         </div>
