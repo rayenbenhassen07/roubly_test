@@ -194,11 +194,11 @@ const Navbar = () => {
                       </li>
                       <li onClick={()=>{setLanguage('fr')}}>
                         <a><Image src="/flags/france.jpg" width={200} height={200} className="w-8" /> 
-                        Arabic (AR) </a>
+                        Francais (FR) </a>
                       </li>
                       <li onClick={()=>{setLanguage('ar')}}>
                         <a><Image src="/flags/arabe.png" width={200} height={200} className="w-8" /> 
-                          Francais (FR)</a>
+                          Arabic (AR)</a>
                       </li>
                     </ul>
                   </details>

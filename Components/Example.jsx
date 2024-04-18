@@ -17,7 +17,7 @@ const Example = () => {
   
   return (
     <>
-      <div className='w-full flex justify-center items-center gap-2 py-10 bg-second '>
+      <div className='w-full flex justify-center items-center gap-2 py-10 bg-second z-0'>
 
         <div className="mockup-window border bg-base-300 w-full m-5 ">
           <h1 className='w-full flex justify-center items-center pb-5  text-lg lg:text-3xl font-extrabold'>Some examples of our work</h1>

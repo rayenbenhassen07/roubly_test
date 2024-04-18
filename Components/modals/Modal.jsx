@@ -90,7 +90,7 @@ const Modal = () => {
 
   return (
     <>
-      <div className={`fixed w-full h-screen flex justify-center items-center ${modelC.isOpen ? 'bg-neutral-800/70' : 'hidden'}`}>
+      <div className={`fixed z-10 w-full h-screen flex justify-center items-center ${modelC.isOpen ? 'bg-neutral-800/70' : 'hidden'}`}>
         <div className={`w-[90%] h-[70%]  p-5 lg:w-1/3 bg-white border-black xl rounded-xl outline-none focus:outline-none translate duration-300 overflow-y-auto ${modelC.isOpen ? 'translate-y-0' : 'translate-y-full'} ${modelC.isOpen ? 'opacity-100' : 'opacity-0'}`}>
           <div className='flex w-full justify-between'>
             <div className='text-lg font-bold'>{components.model?.[language.valeur].Consultations}</div>
