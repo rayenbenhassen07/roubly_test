@@ -24,7 +24,7 @@ const Services = () => {
       
       <div className='flex flex-col lg:flex-row justify-center items-center gap-10 lg:mx-20 mx-2 my-10 text-black'>
 
-        <div className='flex flex-col items-start gap-5  px-4  pt-10 pb-20 rounded-xl shadow-lg bg-blue-100'>
+        <div className='flex flex-col items-start gap-5  px-4  pt-10 pb-20 rounded-xl shadow-lg bg-blue-100 shadow_White_3'>
             <div className='flex gap-2 justify-center '>
                 <FaCheckCircle className='text-blue-600' size={25}/>
                 <div className='text-base lg:text-xl font-medium '>{components.Services?.[language.valeur].Service1}</div>
@@ -61,7 +61,7 @@ const Services = () => {
       <div className='pt-5 flex flex-col gap-5 mx-2 lg:text-lg items-center'>
         <div>{components.Services?.[language.valeur].Title5}</div>
         <div>{components.Services?.[language.valeur].Title6}</div>
-        <button className='bg-blue-500 hover:bg-blue-400 p-3 lg:p-5 rounded-3xl text-white font-bold lg:text-xl shadow-lg ' onClick={()=>{modelC.onOpen()}}>{components.Services?.[language.valeur].Consultations}</button>
+        <button className='bg-blue-500 hover:bg-blue-400 p-3 lg:p-5 rounded-3xl text-white font-bold lg:text-xl shadow-lg shadow_blue_2' onClick={()=>{modelC.onOpen()}}>{components.Services?.[language.valeur].Consultations}</button>
       </div>
       
       

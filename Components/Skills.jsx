@@ -24,7 +24,7 @@ const Skills = () => {
                             src="/Whyus/paper.png"
                             width={210}
                             height={210}
-                            className="w-14 lg:w-30 p-3"
+                            className="w-14 lg:w-30 p-3 shadow_White_1"
                             alt="Picture of the author"
                         />
                     </div>
@@ -39,7 +39,7 @@ const Skills = () => {
                             src="/Whyus/result.png"
                             width={210}
                             height={210}
-                            className="w-14 lg:w-30 p-3"
+                            className="w-14 lg:w-30 p-3 shadow_White_1"
                             alt="Picture of the author"
                         />
                     </div>
@@ -54,7 +54,7 @@ const Skills = () => {
                             src="/Whyus/assurence.png"
                             width={210}
                             height={210}
-                            className="w-14 lg:w-30 p-3"
+                            className="w-14 lg:w-30 p-3  shadow_White_1"
                             alt="Picture of the author"
                         />
                     </div>
@@ -69,7 +69,7 @@ const Skills = () => {
                             src="/Whyus/compain.png"
                             width={210}
                             height={210}
-                            className="w-14 lg:w-30 p-3"
+                            className="w-14 lg:w-30 p-3 shadow_White_1 "
                             alt="Picture of the author"
                         />
                     </div>
@@ -84,7 +84,7 @@ const Skills = () => {
                             src="/Whyus/time.png"
                             width={210}
                             height={210}
-                            className="w-14 lg:w-30 p-3"
+                            className="w-14 lg:w-30 p-3 shadow_White_1 "
                             alt="Picture of the author"
                         />
                     </div>
@@ -99,7 +99,7 @@ const Skills = () => {
                             src="/Whyus/support.png"
                             width={210}
                             height={210}
-                            className="w-14 lg:w-30 p-3"
+                            className="w-14 lg:w-30 p-3 shadow_White_1"
                             alt="Picture of the author"
                         />
                     </div>

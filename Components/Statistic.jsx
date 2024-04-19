@@ -17,17 +17,17 @@ const Statistic = () => {
       <div className='flex flex-col lg:flex-row justify-center items-center gap-10 lg:mx-20 mx-2 my-10'>
 
         <div className='flex flex-col items-start gap-5  w-full px-4 lg:w-1/3'>
-          <div className='text-2xl lg:text-4xl font-extrabold text-blue-400 border-white border-2 p-3 rounded-full'>+11</div>
+          <div className='text-2xl lg:text-4xl font-extrabold text-blue-400 border-white border-2 p-3 rounded-full shadow_White_2 '>+11</div>
           <div className='text-start text-sm lg:text-base'>{components.Statistic?.[language.valeur].p1}</div>
         </div>
 
         <div className='flex flex-col items-start gap-5  w-full px-4 lg:w-1/3'>
-          <div className='text-2xl lg:text-4xl font-extrabold text-blue-400 border-white border-2 p-3 rounded-full'>90%</div>
+          <div className='text-2xl lg:text-4xl font-extrabold text-blue-400 border-white border-2 p-3 rounded-full shadow_White_2'>90%</div>
           <div className='text-start text-sm lg:text-base'>{components.Statistic?.[language.valeur].p2}</div>
         </div>
 
         <div className='flex flex-col items-start gap-5  w-full px-4 lg:w-1/3'>
-          <div className='text-2xl lg:text-4xl font-extrabold text-blue-400 border-white border-2 p-3 rounded-full'>-6</div>
+          <div className='text-2xl lg:text-4xl font-extrabold text-blue-400 border-white border-2 p-3 rounded-full shadow_White_2'>-6</div>
           <div className='text-start text-sm lg:text-base'>{components.Statistic?.[language.valeur].p2}</div>
         </div>
 

@@ -32,7 +32,7 @@ const HomeOne = () => {
           <h2 className=' text-sm lg:text-lg text-black'>{components.HomeOne?.[language.valeur].Title1}</h2>
           <h1 className='font-extrabold  text-xl md:text-4xl lg:text-4xl text-center gradient-text'>{components.HomeOne?.[language.valeur].Title2}</h1>
           <div className='text-center text-md p-8 lg:px-20 lg:font-semibold '> {components.HomeOne?.[language.valeur].p1}</div>
-          <button className='bg-orange-500 hover:bg-orange-400 p-3 lg:p-5 rounded-3xl text-white font-bold lg:text-xl shadow-lg cursor-pointer' onClick={()=>{modelC.onOpen()}}>{components.HomeOne?.[language.valeur].Consultations}</button>
+          <button className='button_orange bg-orange-500 hover:bg-orange-400 p-3 lg:p-5 rounded-3xl text-white font-bold lg:text-xl shadow-lg cursor-pointer' onClick={()=>{modelC.onOpen()}}>{components.HomeOne?.[language.valeur].Consultations}</button>
 
           <div className='flex flex-col items-center gap-5'>
             <div className='space-x-5 tracking-widest'>{components.HomeOne?.[language.valeur].Weuse}</div>

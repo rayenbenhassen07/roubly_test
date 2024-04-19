@@ -26,7 +26,7 @@ const Example = () => {
             <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4'>
 
               <Link href="/examples/web1">
-                <div className='flex flex-col  rounded-lg  hover:bg-blue-100 transition border-2 border-neutral-300'>
+                <div className='flex flex-col  rounded-lg  hover:bg-blue-100 transition border-2 border-neutral-300 exemple_div'>
                   <Image src="/Projects/rayenPotfolio/web1.png" width={1000} height={1000} className="w-[100%] rounded-3xl p-2"/>
                   <div className=''>
                     <h3 className="pl-2 pt-2 font-bold text-black text-sm lg:text-base">Personal portfolio</h3>
@@ -44,7 +44,7 @@ const Example = () => {
               </Link>
 
               <Link href="/examples/web2">
-                <div className='flex flex-col rounded-lg  hover:bg-blue-100 transition border-2 border-neutral-300'>
+                <div className='flex flex-col rounded-lg  hover:bg-blue-100 transition border-2 border-neutral-300 exemple_div'>
                 <Image src="/Projects/hbibna/web2.png" width={1000} height={1000} className="w-[100%] rounded-3xl p-2"/>
                   <div className=''>
                     <h3 className="pl-2 pt-2 font-bold text-black text-sm lg:text-base">Ecommerce website</h3>
@@ -77,7 +77,7 @@ const Example = () => {
               </Link>
 
               <Link href="/examples/web3">
-                <div className='flex flex-col rounded-lg  hover:bg-blue-100 transition border-2 border-neutral-300'>
+                <div className='flex flex-col rounded-lg  hover:bg-blue-100 transition border-2 border-neutral-300 exemple_div'>
                   <Image src="/Projects/arij/web3.png" width={1000} height={1000} className="w-[100%] rounded-3xl p-2"/>
                   <div className=''>
                     <h3 className="pl-2 pt-2 font-bold text-black text-sm lg:text-base">A charitable website for ARIJ organization</h3>
